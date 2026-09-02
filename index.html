@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="PK — API-powered frontend developer portfolio">
+<meta name="theme-color" content="#09090b"><title>PK — API Portfolio</title>
+<link rel="stylesheet" href="css/style.css"></head><body>
+<header class="nav"><a class="logo" href="#home">PK<span>•</span></a>
+<nav><a href="#work">Work</a><a href="#api">Live APIs</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+<button id="theme" aria-label="Toggle theme">◐</button></header>
+<main>
+<section class="hero" id="home"><div><p class="kicker"><i></i> FRONTEND DEVELOPER · API BUILDER</p>
+<h1>Real data.<br><em>Real responses.</em></h1><p class="intro">A portfolio that demonstrates live public API integration, real JSON responses, loading states and graceful error handling.</p>
+<div class="actions"><a class="btn" href="#api">Explore live APIs ↓</a><a class="btn ghost" href="#contact">Contact me</a></div></div>
+<aside class="hero-card"><span class="label">LIVE / LOCAL</span><div id="clock" class="clock">--:--:--</div><b id="weather">Loading weather…</b><small id="place">Detecting location…</small></aside></section>
+<section class="marquee"><span>OPEN-METEO</span><b>✦</b><span>GITHUB</span><b>✦</b><span>HACKER NEWS</span><b>✦</b><span>OPEN LIBRARY</span><b>✦</b><span>RANDOM USER</span><b>✦</b><span>JOKEAPI</span></section>
+<section class="section" id="work"><div class="head"><span>01 / WORK</span><p>Selected projects presented as real product concepts.</p></div>
+<div class="work-grid"><article><div class="visual v1"><strong>SONIQ</strong><span>Music · Web App</span></div><h2>SONIQ</h2><p>Responsive music experience with API-ready states and mobile-first UI.</p></article>
+<article><div class="visual v2"><strong>CARROM CLASH</strong><span>Canvas · Game</span></div><h2>CARROM CLASH</h2><p>Touch-friendly browser game interface with responsive game states.</p></article>
+<article><div class="visual v3"><strong>GRACASH</strong><span>Crypto · Product UI</span></div><h2>GRACASH</h2><p>Reusable dashboard and ecosystem interface patterns.</p></article></div></section>
+<section class="section" id="api"><div class="head"><span>02 / LIVE API LAB</span><p>Each panel makes a real request. Status, parsed response and raw JSON are shown.</p></div>
+<div class="api-grid">
+<article class="api-card wide"><div class="api-title"><span>01</span><h2>Weather</h2><b>OPEN-METEO</b></div><div class="weather-big"><span id="wicon">☁</span><strong id="temp">--°</strong><div><b id="wdesc">Waiting…</b><small id="wmeta">--</small></div></div><div class="api-status" id="weatherStatus">● Checking API</div><button class="api-btn" id="weatherBtn">Refresh</button><pre id="weatherRaw">Waiting…</pre></article>
+<article class="api-card"><div class="api-title"><span>02</span><h2>GitHub</h2><b>REST</b></div><div id="githubResult" class="result">Loading…</div><div class="api-status" id="githubStatus">● Checking API</div><button class="api-btn" id="githubBtn">Reload</button><pre id="githubRaw">Waiting…</pre></article>
+<article class="api-card"><div class="api-title"><span>03</span><h2>Hacker News</h2><b>FIREBASE</b></div><div id="newsResult" class="result">Loading…</div><div class="api-status" id="newsStatus">● Checking API</div><button class="api-btn" id="newsBtn">Reload</button><pre id="newsRaw">Waiting…</pre></article>
+<article class="api-card"><div class="api-title"><span>04</span><h2>Open Library</h2><b>SEARCH</b></div><div id="bookResult" class="result">Loading…</div><div class="api-status" id="bookStatus">● Checking API</div><button class="api-btn" id="bookBtn">New search</button><pre id="bookRaw">Waiting…</pre></article>
+<article class="api-card"><div class="api-title"><span>05</span><h2>Random User</h2><b>PUBLIC</b></div><div id="userResult" class="result">Loading…</div><div class="api-status" id="userStatus">● Checking API</div><button class="api-btn" id="userBtn">Generate</button><pre id="userRaw">Waiting…</pre></article>
+<article class="api-card"><div class="api-title"><span>06</span><h2>JokeAPI</h2><b>NO KEY</b></div><div id="jokeResult" class="result">Loading…</div><div class="api-status" id="jokeStatus">● Checking API</div><button class="api-btn" id="jokeBtn">Get joke</button><pre id="jokeRaw">Waiting…</pre></article>
+</div></section>
+<section class="section" id="about"><div class="head"><span>03 / ABOUT</span><p>Frontend engineering with practical API integration.</p></div>
+<div class="about-grid"><h2>Build interfaces<br><em>that respond.</em></h2><div><p>This project uses public/no-key endpoints wherever possible and includes timeouts, HTTP validation, JSON validation, retry controls and isolated error states.</p><div class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>REST</span><span>JSON</span><span>API</span></div></div></div></section>
+<section class="section" id="contact"><div class="contact-box"><p class="kicker">HAVE A PROJECT?</p><h2>Let's build something<br><em>real.</em></h2><a href="mailto:hello@example.com">hello@example.com ↗</a></div></section>
+</main><footer><span>© <span id="year"></span> PK</span><span>Live public APIs · No build step</span><a href="#home">↑ Top</a></footer>
+<script src="js/app.js" defer></script></body></html>
